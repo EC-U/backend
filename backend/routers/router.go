@@ -8,7 +8,7 @@
 package routers
 
 import (
-	"ecnu/controllers"
+	"ecnu_code/backend/controllers"
 
 	"github.com/astaxie/beego"
 )
@@ -34,15 +34,39 @@ func init() {
 			),
 		),
 
+		beego.NSNamespace("/curriculum",
+			beego.NSInclude(
+				&controllers.CurriculumController{},
+			),
+		),
+
 		beego.NSNamespace("/migrations",
 			beego.NSInclude(
 				&controllers.MigrationsController{},
 			),
 		),
 
+		beego.NSNamespace("/schedule_item",
+			beego.NSInclude(
+				&controllers.ScheduleItemController{},
+			),
+		),
+
 		beego.NSNamespace("/user",
 			beego.NSInclude(
 				&controllers.UserController{},
+			),
+		),
+
+		beego.NSNamespace("/user2curriculum",
+			beego.NSInclude(
+				&controllers.User2curriculumController{},
+			),
+		),
+
+		beego.NSNamespace("/user2schedule",
+			beego.NSInclude(
+				&controllers.User2scheduleController{},
 			),
 		),
 

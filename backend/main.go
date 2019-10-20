@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "ecnu/routers"
+	_ "ecnu_code/backend/routers"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"

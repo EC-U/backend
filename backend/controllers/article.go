@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"ecnu/models"
+	"ecnu_code/backend/models"
 	"encoding/json"
 	"errors"
 	"strconv"

@@ -356,6 +356,121 @@ paths:
           description: '{string} delete success!'
         "403":
           description: id is empty
+  /curriculum/:
+    get:
+      tags:
+      - curriculum
+      description: get Curriculum
+      operationId: CurriculumController.Get All
+      parameters:
+      - in: query
+        name: query
+        description: Filter. e.g. col1:v1,col2:v2 ...
+        type: string
+      - in: query
+        name: fields
+        description: Fields returned. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: sortby
+        description: Sorted-by fields. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: order
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
+        type: string
+      - in: query
+        name: limit
+        description: Limit the size of result set. Must be an integer
+        type: string
+      - in: query
+        name: offset
+        description: Start position of result set. Must be an integer
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Curriculum'
+        "403":
+          description: ""
+    post:
+      tags:
+      - curriculum
+      description: create Curriculum
+      operationId: CurriculumController.Post
+      parameters:
+      - in: body
+        name: body
+        description: body for Curriculum content
+        required: true
+        schema:
+          $ref: '#/definitions/models.Curriculum'
+      responses:
+        "201":
+          description: '{int} models.Curriculum'
+        "403":
+          description: body is empty
+  /curriculum/{id}:
+    get:
+      tags:
+      - curriculum
+      description: get Curriculum by id
+      operationId: CurriculumController.Get One
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Curriculum'
+        "403":
+          description: :id is empty
+    put:
+      tags:
+      - curriculum
+      description: update the Curriculum
+      operationId: CurriculumController.Put
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for Curriculum content
+        required: true
+        schema:
+          $ref: '#/definitions/models.Curriculum'
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Curriculum'
+        "403":
+          description: :id is not int
+    delete:
+      tags:
+      - curriculum
+      description: delete the Curriculum
+      operationId: CurriculumController.Delete
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: id is empty
   /migrations/:
     get:
       tags:
@@ -471,6 +586,121 @@ paths:
           description: '{string} delete success!'
         "403":
           description: id is empty
+  /schedule_item/:
+    get:
+      tags:
+      - schedule_item
+      description: get ScheduleItem
+      operationId: ScheduleItemController.Get All
+      parameters:
+      - in: query
+        name: query
+        description: Filter. e.g. col1:v1,col2:v2 ...
+        type: string
+      - in: query
+        name: fields
+        description: Fields returned. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: sortby
+        description: Sorted-by fields. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: order
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
+        type: string
+      - in: query
+        name: limit
+        description: Limit the size of result set. Must be an integer
+        type: string
+      - in: query
+        name: offset
+        description: Start position of result set. Must be an integer
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.ScheduleItem'
+        "403":
+          description: ""
+    post:
+      tags:
+      - schedule_item
+      description: create ScheduleItem
+      operationId: ScheduleItemController.Post
+      parameters:
+      - in: body
+        name: body
+        description: body for ScheduleItem content
+        required: true
+        schema:
+          $ref: '#/definitions/models.ScheduleItem'
+      responses:
+        "201":
+          description: '{int} models.ScheduleItem'
+        "403":
+          description: body is empty
+  /schedule_item/{id}:
+    get:
+      tags:
+      - schedule_item
+      description: get ScheduleItem by id
+      operationId: ScheduleItemController.Get One
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.ScheduleItem'
+        "403":
+          description: :id is empty
+    put:
+      tags:
+      - schedule_item
+      description: update the ScheduleItem
+      operationId: ScheduleItemController.Put
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for ScheduleItem content
+        required: true
+        schema:
+          $ref: '#/definitions/models.ScheduleItem'
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.ScheduleItem'
+        "403":
+          description: :id is not int
+    delete:
+      tags:
+      - schedule_item
+      description: delete the ScheduleItem
+      operationId: ScheduleItemController.Delete
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: id is empty
   /user/:
     get:
       tags:
@@ -575,6 +805,236 @@ paths:
       - user
       description: delete the User
       operationId: UserController.Delete
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: id is empty
+  /user2curriculum/:
+    get:
+      tags:
+      - user2curriculum
+      description: get User2curriculum
+      operationId: User2curriculumController.Get All
+      parameters:
+      - in: query
+        name: query
+        description: Filter. e.g. col1:v1,col2:v2 ...
+        type: string
+      - in: query
+        name: fields
+        description: Fields returned. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: sortby
+        description: Sorted-by fields. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: order
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
+        type: string
+      - in: query
+        name: limit
+        description: Limit the size of result set. Must be an integer
+        type: string
+      - in: query
+        name: offset
+        description: Start position of result set. Must be an integer
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.User2curriculum'
+        "403":
+          description: ""
+    post:
+      tags:
+      - user2curriculum
+      description: create User2curriculum
+      operationId: User2curriculumController.Post
+      parameters:
+      - in: body
+        name: body
+        description: body for User2curriculum content
+        required: true
+        schema:
+          $ref: '#/definitions/models.User2curriculum'
+      responses:
+        "201":
+          description: '{int} models.User2curriculum'
+        "403":
+          description: body is empty
+  /user2curriculum/{id}:
+    get:
+      tags:
+      - user2curriculum
+      description: get User2curriculum by id
+      operationId: User2curriculumController.Get One
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.User2curriculum'
+        "403":
+          description: :id is empty
+    put:
+      tags:
+      - user2curriculum
+      description: update the User2curriculum
+      operationId: User2curriculumController.Put
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for User2curriculum content
+        required: true
+        schema:
+          $ref: '#/definitions/models.User2curriculum'
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.User2curriculum'
+        "403":
+          description: :id is not int
+    delete:
+      tags:
+      - user2curriculum
+      description: delete the User2curriculum
+      operationId: User2curriculumController.Delete
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: id is empty
+  /user2schedule/:
+    get:
+      tags:
+      - user2schedule
+      description: get User2schedule
+      operationId: User2scheduleController.Get All
+      parameters:
+      - in: query
+        name: query
+        description: Filter. e.g. col1:v1,col2:v2 ...
+        type: string
+      - in: query
+        name: fields
+        description: Fields returned. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: sortby
+        description: Sorted-by fields. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: order
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
+        type: string
+      - in: query
+        name: limit
+        description: Limit the size of result set. Must be an integer
+        type: string
+      - in: query
+        name: offset
+        description: Start position of result set. Must be an integer
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.User2schedule'
+        "403":
+          description: ""
+    post:
+      tags:
+      - user2schedule
+      description: create User2schedule
+      operationId: User2scheduleController.Post
+      parameters:
+      - in: body
+        name: body
+        description: body for User2schedule content
+        required: true
+        schema:
+          $ref: '#/definitions/models.User2schedule'
+      responses:
+        "201":
+          description: '{int} models.User2schedule'
+        "403":
+          description: body is empty
+  /user2schedule/{id}:
+    get:
+      tags:
+      - user2schedule
+      description: get User2schedule by id
+      operationId: User2scheduleController.Get One
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.User2schedule'
+        "403":
+          description: :id is empty
+    put:
+      tags:
+      - user2schedule
+      description: update the User2schedule
+      operationId: User2scheduleController.Put
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for User2schedule content
+        required: true
+        schema:
+          $ref: '#/definitions/models.User2schedule'
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.User2schedule'
+        "403":
+          description: :id is not int
+    delete:
+      tags:
+      - user2schedule
+      description: delete the User2schedule
+      operationId: User2scheduleController.Delete
       parameters:
       - in: path
         name: id
@@ -705,21 +1165,170 @@ definitions:
   models.Activity:
     title: Activity
     type: object
+    properties:
+      Article:
+        type: string
+      Category:
+        $ref: '#/definitions/models.Category'
+      Id:
+        type: integer
+        format: int64
+      Image:
+        type: string
+      Introduction:
+        type: string
+      Organization:
+        type: string
+      Place:
+        type: string
+      Publisher:
+        type: string
+      Time:
+        type: string
+      Title:
+        type: string
+      Url:
+        type: string
   models.Article:
     title: Article
     type: object
+    properties:
+      Article:
+        type: string
+      Id:
+        type: integer
+        format: int64
+      Imageurl:
+        type: string
+      Introduction:
+        type: string
+      Posttime:
+        type: string
+        format: datetime
+      Publisher:
+        type: string
+      Title:
+        type: string
+      Url:
+        type: string
   models.Category:
     title: Category
     type: object
+    properties:
+      Id:
+        type: integer
+        format: int64
+      Name:
+        type: string
+  models.Curriculum:
+    title: Curriculum
+    type: object
+    properties:
+      Id:
+        type: integer
+        format: int64
+      LastTime:
+        type: integer
+        format: int64
+      Location:
+        type: string
+      Name:
+        type: string
+      StartTime:
+        type: integer
+        format: int64
+      Teacher:
+        type: string
+      WeekDay:
+        type: integer
+        format: int64
   models.Migrations:
     title: Migrations
     type: object
+    properties:
+      CreatedAt:
+        description: date migrated or rolled back
+        type: string
+        format: datetime
+      Id:
+        description: surrogate key
+        type: integer
+        format: int64
+      Name:
+        description: migration name, unique
+        type: string
+      RollbackStatements:
+        description: SQL statment for rolling back migration
+        type: string
+      Statements:
+        description: SQL statements for this migration
+        type: string
+      Status:
+        description: update indicates it is a normal migration while rollback means
+          this migration is rolled back
+        type: string
+  models.ScheduleItem:
+    title: ScheduleItem
+    type: object
+    properties:
+      ActivityId:
+        $ref: '#/definitions/models.Activity'
+      Id:
+        type: integer
+        format: int64
+      LastTime:
+        type: integer
+        format: int64
+      StartTime:
+        type: string
+        format: datetime
+      UserId:
+        $ref: '#/definitions/models.User'
   models.User:
     title: User
     type: object
+    properties:
+      Id:
+        type: integer
+        format: int64
+      RegisterTime:
+        type: string
+        format: datetime
+      Token:
+        type: string
+      Username:
+        type: string
+  models.User2curriculum:
+    title: User2curriculum
+    type: object
+    properties:
+      CurriculumId:
+        $ref: '#/definitions/models.Curriculum'
+      Id:
+        type: integer
+        format: int64
+      UserId:
+        $ref: '#/definitions/models.User'
+  models.User2schedule:
+    title: User2schedule
+    type: object
+    properties:
+      Id:
+        type: integer
+        format: int64
+      ScheduleId:
+        $ref: '#/definitions/models.ScheduleItem'
+      UserId:
+        $ref: '#/definitions/models.User'
   models.Userprofile:
     title: Userprofile
     type: object
+    properties:
+      Id:
+        type: integer
+        format: int64
+      Nickname:
+        type: string
 tags:
 - name: activity
   description: |
@@ -730,12 +1339,24 @@ tags:
 - name: category
   description: |
     CategoryController operations for Category
+- name: curriculum
+  description: |
+    CurriculumController operations for Curriculum
 - name: migrations
   description: |
     MigrationsController operations for Migrations
+- name: schedule_item
+  description: |
+    ScheduleItemController operations for ScheduleItem
 - name: user
   description: |
     UserController operations for User
+- name: user2curriculum
+  description: |
+    User2curriculumController operations for User2curriculum
+- name: user2schedule
+  description: |
+    User2scheduleController operations for User2schedule
 - name: userprofile
   description: |
     UserprofileController operations for Userprofile
