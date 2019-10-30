@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0b2cc4c7-5a13-4488-baa3-21f8779f3a91" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend.exe" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/backend/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/activity.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/activity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/article.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/article.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/category.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/category.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/migrations.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/migrations.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/userprofile.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/userprofile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/lastupdate.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/backend/lastupdate.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/activity.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/activity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/article.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/article.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/category.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/category.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/migrations.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/migrations.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/text2tag.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/text2tag.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/user2text.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/user2text.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/userprofile.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/userprofile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routers/commentsRouter_controllers.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routers/commentsRouter_controllers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/swagger.zip" beforeDir="false" afterPath="$PROJECT_DIR$/backend/swagger.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/swagger/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/swagger/favicon-16x16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/swagger/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/swagger/favicon-32x32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/swagger/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/swagger/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/swagger/oauth2-redirect.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/swagger/oauth2-redirect.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/swagger/swagger-ui-bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/swagger/swagger-ui-bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/swagger/swagger-ui-bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/swagger/swagger-ui-bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/swagger/swagger-ui-standalone-preset.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/swagger/swagger-ui-standalone-preset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/swagger/swagger-ui-standalone-preset.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/swagger/swagger-ui-standalone-preset.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/swagger/swagger-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/swagger/swagger-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/swagger/swagger-ui.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/swagger/swagger-ui.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/swagger/swagger-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/swagger/swagger-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/swagger/swagger-ui.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/swagger/swagger-ui.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/swagger/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/swagger/swagger.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/swagger/swagger.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/swagger/swagger.yml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1SN0GAR77dplog3vxb5pfZDKFy9" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+</project>
